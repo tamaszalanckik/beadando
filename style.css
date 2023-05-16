@@ -1,5 +1,14 @@
+body{
+    background-image: url(kepek/krumpli.jfif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .index-hatter{
     width: 100%;
     height: 100%;
     background-image: url(kepek/krumpli.jfif);
+    
 }
