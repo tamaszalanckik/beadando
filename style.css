@@ -1,14 +1,49 @@
-body{
-    background-image: url(kepek/krumpli.jfif);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+body, html{
+    height: 100%;
+    margin: 0;
 }
 
-.index-hatter{
-    width: 100%;
+.background{
+    background-image: url(kepek/krumplihatter.jpg);
+    background-size: cover;
+    background-position: center;
     height: 100%;
-    background-image: url(kepek/krumpli.jfif);
-    
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+}
+
+.nav-left, .nav-right{
+    margin: 0;
+    display: flex;
+    flex: 1;
+    width: fit-content;
+}
+
+.nav-left{
+    justify-content: flex-start;
+}
+
+.nav-right{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+h1 > a{
+    text-decoration: none;
+    background-color: transparent;
+    color: cyan;
+    margin-left: 1rem;
+}
+
+.navigation-avb{
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: cyan;
+    background-color: transparent;
+    border: none;
+    margin-right: 1rem;
 }
