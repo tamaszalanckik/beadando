@@ -47,3 +47,17 @@ h1 > a{
     border: none;
     margin-right: 1rem;
 }
+
+.hover-effect:hover{
+    animation: glow 0.75s ease-in-out infinite alternate; 
+}
+
+@keyframes glow{
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #009aa3, 0 0 40px #009aa3, 0 0 50px #009aa3, 0 0 60px #009aa3, 0 0 70px #009aa3;
+      }
+      
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #006c72, 0 0 40px #006c72, 0 0 50px #006c72, 0 0 60px #006c72, 0 0 70px #006c72, 0 0 80px #006c72;
+      }
+}
