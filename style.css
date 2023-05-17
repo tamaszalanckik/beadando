@@ -1,6 +1,7 @@
 body, html{
     height: 100%;
     margin: 0;
+    background-color: black;
 }
 
 .background{
@@ -8,6 +9,7 @@ body, html{
     background-size: cover;
     background-position: center;
     height: 100%;
+    z-index: 1;
 }
 
 .navigation{
@@ -29,6 +31,7 @@ body, html{
 .nav-right{
     flex-direction: row;
     justify-content: flex-end;
+    z-index: 10;
 }
 
 h1 > a{
@@ -40,7 +43,7 @@ h1 > a{
 
 .navigation-avb{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
     text-decoration: none;
     color: cyan;
     background-color: transparent;
@@ -48,8 +51,277 @@ h1 > a{
     margin-right: 1rem;
 }
 
+section{
+    background-color: aqua;
+    border-radius: 20px;
+    bottom: 68%;
+    left: 7%;
+    padding: 10px;
+    width: 35%;
+    position: absolute;
+    height: 26%;
+    line-height: 40px;
+}
+
+
+section:last-child{
+    left: 60%;
+    bottom: 50%;
+    height: 20%;
+}
+
+.navigation h2{
+    margin-bottom: 20px;
+}
+
+section img, h2{
+    display: inline-block;
+}
+
+section > img{
+    width: 20%;
+    margin-left: 30px;
+    border-radius: 15px;
+}
+
+#miAzAKrumpli-mellekOldal{
+    height: 90%;
+    width: 90%;
+    bottom: 0;
+    padding: 30px;
+}
+
+#miAzAKrumpli-mellekOldal > article > h3, aside{
+    text-indent: 40px;
+}
+
+#miAzAKrumpli-mellekOldal > article > h3{
+    margin-top: 120px;
+}
+
+aside > img{
+    width: 10%;
+    left: 85%;
+    transition: 0.75s;
+    position: absolute;
+}
+
+aside > img:active{
+    transition: 0.75s;
+    width: 25%;
+    border-radius: 10px;
+    left: 50%;
+}
+
+#video{
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 20%;
+    bottom: 20%;
+}
+
+#video h2{
+    position: absolute;
+}
+
+#video video{
+    align-items: center;
+    width: 60%;
+    border-radius: 10px;
+    left: 35%;
+    position: absolute;
+}
+
+#video video:hover{
+    cursor: none;
+}
+
+.dropdown ul{
+    background-color: transparent;
+}
+
+.dropdown li a{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: cyan;
+}
+
+.dropdown li a:hover{
+    animation: glow 1s ease-in-out infinite alternate;
+    background-color: transparent;
+    color: cyan;
+}
+
+.dropdown-menu{
+    background-color: black;
+    border: none;
+    color: cyan;
+}
+
+#tippektrukkok{
+    left: 15%;
+    bottom: 30%;
+    width: 70%;
+    height: 60%;
+}
+
+#tippektrukkok img{
+    position: absolute;
+    left: 75%;
+    bottom: 5%;
+    transition: 0.5s;
+}
+
+#tippektrukkok img:active{
+    width: 40%;
+    left: 50%;
+    z-index: 10;
+    transition: 0.5s;
+}
+
+#tippektrukkok ol{
+    font-weight: bold;
+}
+
+#tippektrukkok ol li{
+    text-indent: 20px;
+    line-height: 60px;
+}
+
+#eszkozok{
+    bottom: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+#eszkozok h3{
+    text-indent: 30px;
+}
+
+#eszkozok aside{
+    text-indent: 50px;
+}
+
 .hover-effect:hover{
-    animation: glow 0.75s ease-in-out infinite alternate; 
+    animation: glow 1s ease-in-out infinite alternate; 
+}
+
+@-webkit-keyframes fallingPotato-fall {
+    0% {
+        top: -10%
+    }
+    100% {
+        top: 100%
+    }
+}
+
+@-webkit-keyframes fallingPotato-shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+    50% {
+        -webkit-transform: translateX(80px);
+        transform: translateX(80px)
+    }
+}
+
+@keyframes fallingPotato-fall {
+    0% {
+        top: -10%
+    }
+    100% {
+        top: 100%
+    }
+}
+
+@keyframes fallingPotato-shake {
+    0%,
+    100% {
+        transform: translateX(0)
+    }
+    50% {
+        transform: translateX(80px)
+    }
+}
+
+.potatoes {
+    position: fixed;
+    top: -10%;
+    z-index: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-animation-name: fallingPotato-fall, fallingPotato-shake;
+    -webkit-animation-duration: 10s, 3s;
+    -webkit-animation-timing-function: linear, ease-in-out;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-play-state: running, running;
+    animation-name: fallingPotato-fall, fallingPotato-shake;
+    animation-duration: 10s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: running, running
+}
+
+.potatoes:nth-of-type(0) {
+    left: 10%;
+    -webkit-animation-delay: 0s, 0s;
+    animation-delay: 0s, 0s
+}
+
+.potatoes:nth-of-type(1) {
+    left: 20%;
+    -webkit-animation-delay: 1s, 1s;
+    animation-delay: 1s, 1s
+}
+
+.potatoes:nth-of-type(2) {
+    left: 30%;
+    -webkit-animation-delay: 6s, .5s;
+    animation-delay: 6s, .5s
+}
+
+.potatoes:nth-of-type(3) {
+    left: 40%;
+    -webkit-animation-delay: 4s, 2s;
+    animation-delay: 4s, 2s
+}
+
+.potatoes:nth-of-type(4) {
+    left: 50%;
+    -webkit-animation-delay: 2s, 2s;
+    animation-delay: 2s, 2s
+}
+
+.potatoes:nth-of-type(5) {
+    left: 60%;
+    -webkit-animation-delay: 8s, 3s;
+    animation-delay: 8s, 3s
+}
+
+.potatoes:nth-of-type(6) {
+    left: 70%;
+    -webkit-animation-delay: 6s, 2s;
+    animation-delay: 6s, 2s
+}
+
+.snowflake:nth-of-type(7) {
+    left: 80%;
+    -webkit-animation-delay: 2.5s, 1s;
+    animation-delay: 2.5s, 1s
+}
+
+.potatoes:nth-of-type(8) {
+    left: 90%;
+    -webkit-animation-delay: 1s, 0s;
+    animation-delay: 1s, 0s
 }
 
 @keyframes glow{
@@ -60,4 +332,172 @@ h1 > a{
       to {
         text-shadow: 0 0 20px #fff, 0 0 30px #006c72, 0 0 40px #006c72, 0 0 50px #006c72, 0 0 60px #006c72, 0 0 70px #006c72, 0 0 80px #006c72;
       }
+}
+
+@media screen and (max-width: 2500px) {
+        
+    #video{
+        display: block;
+    }
+
+    #video video{
+        bottom: 20%;
+        left: 20%;
+    }
+
+}
+
+@media screen and (max-width: 2200px) {
+    
+    section{
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 1920px) {
+    
+    section{
+        width: 50%;
+    }
+
+    section:last-child{
+        left: 50%;
+        bottom: 44%;
+    }
+
+    aside > img{
+        width: 15%;
+    }
+
+}
+
+@media screen and (max-width: 1520px) {
+    
+    section{
+        width: 60%;
+        height: 24%;
+    }
+
+    section:last-child{
+        left: 40%;
+        height: 20%;
+        bottom: 44%;
+    }
+
+    aside > img{
+        width: 20%;
+        left: 70%;
+    }
+
+    #video video{
+        width: 70%;
+        left: 15%;
+    }
+
+}
+
+@media screen and (max-width: 1270px) {
+    
+    section{
+        height: 33%;
+        bottom: 56%;
+    }
+
+    section > img{
+        display: block;
+        margin: auto;
+        width: 30%;
+    }
+
+    section:last-child{
+        height: 20%;
+        bottom: 28%;
+    }
+
+    aside > img{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #video video{
+        width: 80%;
+        left: 10%;
+    }
+
+}
+
+@media screen and (max-width: 890px) {
+    
+    section{
+        height: 30%;
+    }
+
+    .nav-right{
+        flex-direction: column;
+        background-color: black;
+        flex: 0.1;
+        width: 240px;
+        cursor: pointer;
+        position: absolute;
+        bottom: 83%;
+        left: 99%;
+        text-indent: 10px;
+        transition: 0.5s;
+        width: 8%;
+    }
+
+    .nav-right:hover{
+        transition: 0.5s;
+        left: 76%;
+        width: fit-content;
+    }
+
+    #video video{
+        width: 99%;
+        left: 0.5%;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    
+    section{
+        height: 30%;
+        left: 20%;
+    }
+
+    section:last-child{
+        left: 20%;
+        height: 30%;
+        bottom: 20%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    
+    section > img{
+        display: none;    
+    }
+
+    .nav-right{
+        left: 93%;
+        bottom: 84%;
+    }
+
+    section{
+        bottom: 55%;
+        height: 40%;
+    }
+
+    section:last-child{
+        height: 40%;
+        bottom: 10%;
+    }
+
+    .nav-right:hover{
+        left: 52%;
+    }
+
 }
