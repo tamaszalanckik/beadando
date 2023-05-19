@@ -1,7 +1,8 @@
 body, html{
     height: 100%;
     margin: 0;
-    background-color: black;
+    background-color: rgb(145, 115, 79);
+    overflow-x: hidden;
 }
 
 .background{
@@ -15,6 +16,7 @@ body, html{
 .navigation{
     display: flex;
     align-items: center;
+    margin-bottom: 70px;
 }
 
 .nav-left, .nav-right{
@@ -52,7 +54,7 @@ h1 > a{
 }
 
 section{
-    background-color: aqua;
+    background-color: bisque;
     border-radius: 20px;
     bottom: 68%;
     left: 7%;
@@ -82,21 +84,6 @@ section > img{
     width: 20%;
     margin-left: 30px;
     border-radius: 15px;
-}
-
-#miAzAKrumpli-mellekOldal{
-    height: 90%;
-    width: 90%;
-    bottom: 0;
-    padding: 30px;
-}
-
-#miAzAKrumpli-mellekOldal > article > h3, aside{
-    text-indent: 40px;
-}
-
-#miAzAKrumpli-mellekOldal > article > h3{
-    margin-top: 120px;
 }
 
 aside > img{
@@ -140,7 +127,8 @@ aside > img:active{
 }
 
 .dropdown ul{
-    background-color: transparent;
+    background-color: #FFFDD0;
+    border-radius: 20px;
 }
 
 .dropdown li a{
@@ -188,7 +176,8 @@ aside > img:active{
 
 #tippektrukkok ol li{
     text-indent: 20px;
-    line-height: 60px;
+    line-height: 70px;
+    font-size: 1.6rem;
 }
 
 #eszkozok{
@@ -204,6 +193,36 @@ aside > img:active{
 
 #eszkozok aside{
     text-indent: 50px;
+}
+
+.MIA-KRUMPLIK{
+    width: 60%;
+    height: 55%;
+    margin: 10px;
+    padding: 20px;
+    background-color: bisque;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+
+.MIA-KRUMPLIK > p{
+    margin-top: 20px;
+    text-indent: 30px;
+    font-size: 1.4rem;
+}
+
+.MIA-KRUMPLIK > img{
+    margin-top: 50px;
+    height: 40%;
+    position: relative;
+    left: 35%;
+    bottom: 0%;
+}
+
+.MIA-KRUMPLIK > img:active{
+    height: 50%;
+    left: 30%;
 }
 
 .hover-effect:hover{
@@ -353,6 +372,15 @@ aside > img:active{
         width: 40%;
     }
 
+    .MIA-KRUMPLIK > img{
+        left: 20%;
+    }
+
+    .MIA-KRUMPLIK > img:active{
+        left: 18%;
+        height: 45%;
+    }
+
 }
 
 @media screen and (max-width: 1920px) {
@@ -368,6 +396,10 @@ aside > img:active{
 
     aside > img{
         width: 15%;
+    }
+
+    .MIA-KRUMPLIK{
+        height: 68%;
     }
 
 }
@@ -393,6 +425,20 @@ aside > img:active{
     #video video{
         width: 70%;
         left: 15%;
+    }
+
+    .MIA-KRUMPLIK{
+        height: 80%;
+    }
+
+    .MIA-KRUMPLIK > img{
+        left: 18%;
+        height: 30%;
+    }
+
+    .MIA-KRUMPLIK > img:active{
+        left: 15%;
+        height: 40%;
     }
 
 }
@@ -425,6 +471,35 @@ aside > img:active{
         left: 10%;
     }
 
+    .MIA-KRUMPLIK > img{
+        margin-top: 90px;
+        height: 25%;
+    }
+
+    .MIA-KRUMPLIK > img:active{
+        left: 10%;
+        height: 30%;
+    }
+
+    .MIA-KRUMPLIK{
+        height: 80%;
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+    
+    .MIA-KRUMPLIK > img{
+        height: 20%;
+        left: 20%;
+        margin-top: 10px;
+    }
+
+    .MIA-KRUMPLIK > img:active{
+        height: 24%;
+        left: 16%;
+    }
+
 }
 
 @media screen and (max-width: 890px) {
@@ -435,13 +510,13 @@ aside > img:active{
 
     .nav-right{
         flex-direction: column;
-        background-color: black;
+        background-color: #FFFDD0;
         flex: 0.1;
         width: 240px;
         cursor: pointer;
         position: absolute;
-        bottom: 83%;
-        left: 99%;
+        bottom: 80%;
+        left: 98%;
         text-indent: 10px;
         transition: 0.5s;
         width: 8%;
@@ -451,11 +526,27 @@ aside > img:active{
         transition: 0.5s;
         left: 76%;
         width: fit-content;
+        border-radius: 10px;
     }
 
     #video video{
         width: 99%;
         left: 0.5%;
+    }
+
+    .MIA-KRUMPLIK{
+        height: 90%;
+        width: 70%;
+    }
+
+    .MIA-KRUMPLIK > img{
+        height: 16%;
+        left: 16%;
+    }
+
+    .MIA-KRUMPLIK > img:active{
+        height: 20%;
+        left: 8%;
     }
 
 }
@@ -473,6 +564,35 @@ aside > img:active{
         bottom: 20%;
     }
 
+    .MIA-KRUMPLIK{
+        height: 90%;
+        width: 90%;
+    }
+
+    .MIA-KRUMPLIK > img{
+        height: 20%;
+        left: 20%;
+    }
+
+    .MIA-KRUMPLIK > img:active{
+        height: 22%;
+        left: 16%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .MIA-KRUMPLIK > img{
+        height: 14%;
+        left: 22%;
+    }
+
+    .MIA-KRUMPLIK > img:active{
+        height: 17%;
+        left: 15%;
+    }
+    
 }
 
 @media screen and (max-width: 500px) {
@@ -498,6 +618,19 @@ aside > img:active{
 
     .nav-right:hover{
         left: 52%;
+    }
+
+    .MIA-KRUMPLIK{
+        height: fit-content;
+    }
+
+    .MIA-KRUMPLIK > img{
+        display: none;
+    }
+
+    .nav-right{
+        bottom: 70%;
+        left: 108%;
     }
 
 }
