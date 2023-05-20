@@ -2,7 +2,7 @@ body, html{
     height: 100%;
     margin: 0;
     background-color: rgb(145, 115, 79);
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 .background{
@@ -56,19 +56,20 @@ h1 > a{
 section{
     background-color: bisque;
     border-radius: 20px;
-    bottom: 68%;
+    bottom: 0%;
     left: 7%;
     padding: 10px;
     width: 35%;
-    position: absolute;
+    position: relative;
     height: 26%;
     line-height: 40px;
+    margin-bottom: 20px;
 }
 
 
 section:last-child{
     left: 60%;
-    bottom: 50%;
+    bottom: 0%;
     height: 20%;
 }
 
@@ -107,7 +108,7 @@ aside > img:active{
     flex-direction: column;
     justify-content: center;
     left: 20%;
-    bottom: 20%;
+    bottom: 0%;
 }
 
 #video h2{
@@ -115,7 +116,6 @@ aside > img:active{
 }
 
 #video video{
-    align-items: center;
     width: 60%;
     border-radius: 10px;
     left: 35%;
@@ -180,19 +180,57 @@ aside > img:active{
     font-size: 1.6rem;
 }
 
-#eszkozok{
-    bottom: 10%;
-    left: 10%;
-    width: 80%;
-    height: 80%;
+#kozepcim{
+    text-align: center;
+    background-color: bisque;
+    width: 30%;
+    margin: auto;
+    border-radius: 15px;
+    padding: 10px;
 }
 
-#eszkozok h3{
-    text-indent: 30px;
+.krumplipucoloDiv, .kesDiv, .pucoloGepDiv, .szivacsDiv, .KonyharuhaDiv{
+    width: 45%;
+    height: 40%;
+    background-color: bisque;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
-#eszkozok aside{
-    text-indent: 50px;
+.krumplipucoloDiv, .kesDiv, .pucoloGepDiv, .szivacsDiv, .KonyharuhaDiv > p{
+    font-size: 1.3rem;
+    text-indent: 20px;
+}
+
+.krumplipucoloDiv > img{
+    height: 40%;
+    position: relative;
+    left: 40%;
+    bottom: -40%;
+}
+
+.krumplipucoloDiv > img:active{
+    height: 60%;
+    left: 35%;
+    bottom: -30%;
+}
+
+.pucoloGepDiv > img{
+    height: 40%;
+    position: relative;
+    left: 35%;
+    bottom: -40%;
+}
+
+.pucoloGepDiv > img:active{
+    height: 55%;
+    left: 30%;
+    bottom: -35%;
+}
+
+.kesDiv, .szivacsDiv{
+    margin-left: auto;
 }
 
 .MIA-KRUMPLIK{
@@ -360,8 +398,9 @@ aside > img:active{
     }
 
     #video video{
-        bottom: 20%;
-        left: 20%;
+        bottom: 10%;
+        left: 10%;
+        width: 80%;
     }
 
 }
@@ -391,7 +430,7 @@ aside > img:active{
 
     section:last-child{
         left: 50%;
-        bottom: 44%;
+        bottom: 0%;
     }
 
     aside > img{
@@ -400,6 +439,14 @@ aside > img:active{
 
     .MIA-KRUMPLIK{
         height: 68%;
+    }
+
+    #kozepcim{
+        width: 45%;
+    }
+
+    .krumplipucoloDiv, .kesDiv, .pucoloGepDiv, .szivacsDiv, .KonyharuhaDiv{
+        width: 60%;
     }
 
 }
@@ -414,7 +461,7 @@ aside > img:active{
     section:last-child{
         left: 40%;
         height: 20%;
-        bottom: 44%;
+        bottom: 0%;
     }
 
     aside > img{
@@ -422,9 +469,13 @@ aside > img:active{
         left: 70%;
     }
 
-    #video video{
+    #video{
         width: 70%;
-        left: 15%;
+    }
+
+    #video video{
+        width: 90%;
+        left: 5%;
     }
 
     .MIA-KRUMPLIK{
@@ -440,6 +491,14 @@ aside > img:active{
         left: 15%;
         height: 40%;
     }
+    
+    #kozepcim{
+        width: 60%;
+    }
+
+    .krumplipucoloDiv, .kesDiv, .pucoloGepDiv, .szivacsDiv, .KonyharuhaDiv{
+        width: 70%;
+    }
 
 }
 
@@ -447,7 +506,7 @@ aside > img:active{
     
     section{
         height: 33%;
-        bottom: 56%;
+        bottom: 0%;
     }
 
     section > img{
@@ -458,7 +517,7 @@ aside > img:active{
 
     section:last-child{
         height: 20%;
-        bottom: 28%;
+        bottom: 0%;
     }
 
     aside > img{
@@ -466,9 +525,14 @@ aside > img:active{
         flex-direction: row;
     }
 
+    #video{
+        width: 90%;
+        left: 5%;
+    }
+
     #video video{
-        width: 80%;
-        left: 10%;
+        width: 90%;
+        left: 5%;
     }
 
     .MIA-KRUMPLIK > img{
@@ -483,6 +547,26 @@ aside > img:active{
 
     .MIA-KRUMPLIK{
         height: 80%;
+    }
+
+    .krumplipucoloDiv > img{
+        left: 30%;
+    }
+
+    .krumplipucoloDiv > img:active{
+        left: 25%;
+        height: 50%;
+        bottom: -35%;
+    }
+
+    .pucoloGepDiv > img{
+        left: 28%;
+    }
+
+    .pucoloGepDiv > img:active{
+        height: 50%;
+        left: 24%;
+        bottom: -35%;
     }
 
 }
@@ -506,32 +590,44 @@ aside > img:active{
     
     section{
         height: 30%;
+        line-height: 24px;
     }
 
     .nav-right{
-        flex-direction: column;
-        background-color: #FFFDD0;
+        background-color: beige;
+        width: 60px;
+        height: 60px;
         flex: 0.1;
-        width: 240px;
-        cursor: pointer;
-        position: absolute;
-        bottom: 80%;
-        left: 98%;
-        text-indent: 10px;
-        transition: 0.5s;
-        width: 8%;
+        margin: 10px;
+        border-radius: 30px;
+        flex-direction: column;
+    }
+
+    .navigation-avb{
+        color: beige;
+        font-size: 0px;
+    }
+
+    .nav-right:hover .navigation-avb{
+        color: cyan;
+        font-size: 1.5rem;
     }
 
     .nav-right:hover{
-        transition: 0.5s;
-        left: 76%;
+        flex: 0.5;
+        height: fit-content;
         width: fit-content;
-        border-radius: 10px;
+        text-indent: 20px;
     }
+
 
     #video video{
         width: 99%;
         left: 0.5%;
+    }
+
+    #video{
+        height: 60%;
     }
 
     .MIA-KRUMPLIK{
@@ -561,7 +657,7 @@ aside > img:active{
     section:last-child{
         left: 20%;
         height: 30%;
-        bottom: 20%;
+        bottom: 0%;
     }
 
     .MIA-KRUMPLIK{
@@ -577,6 +673,12 @@ aside > img:active{
     .MIA-KRUMPLIK > img:active{
         height: 22%;
         left: 16%;
+    }
+
+    .krumplipucoloDiv, .kesDiv, .pucoloGepDiv, .szivacsDiv, .KonyharuhaDiv{
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
     }
 
 }
@@ -597,27 +699,27 @@ aside > img:active{
 
 @media screen and (max-width: 500px) {
     
+    #video{
+        height: 40%;
+        bottom: 0%;
+    }
+
     section > img{
         display: none;    
     }
 
-    .nav-right{
-        left: 93%;
-        bottom: 84%;
-    }
-
     section{
-        bottom: 55%;
-        height: 40%;
+        width: 80%;
+        left: 10%;
+        bottom: 0%;
+        height: 50%;
     }
 
     section:last-child{
         height: 40%;
-        bottom: 10%;
-    }
-
-    .nav-right:hover{
-        left: 52%;
+        bottom: 0%;
+        width: 80%;
+        left: 10%;
     }
 
     .MIA-KRUMPLIK{
@@ -628,9 +730,22 @@ aside > img:active{
         display: none;
     }
 
-    .nav-right{
-        bottom: 70%;
-        left: 108%;
+    .krumplipucoloDiv, .kesDiv, .pucoloGepDiv, .szivacsDiv, .KonyharuhaDiv{
+        height: fit-content;
+    }   
+
+    .krumplipucoloDiv > img{
+        display: none;
+    }
+
+    .pucoloGepDiv > img{
+        display: none;
+    }
+
+    #kozepcim{
+        width: fit-content;
+        margin: 10px;
     }
 
 }
+
