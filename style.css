@@ -2,13 +2,14 @@ body, html{
     height: 100%;
     margin: 0;
     background-color: rgb(145, 115, 79);
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 }
 
 .background{
     background-image: url(kepek/krumplihatter.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: repeat-y;
     height: 100%;
     z-index: 1;
 }
@@ -151,9 +152,10 @@ aside > img:active{
 
 #tippektrukkok{
     left: 15%;
-    bottom: 30%;
+    bottom: 0%;
     width: 70%;
-    height: 60%;
+    height: 50%;
+    padding: 20px;
 }
 
 #tippektrukkok img{
@@ -191,7 +193,7 @@ aside > img:active{
 
 .krumplipucoloDiv, .kesDiv, .pucoloGepDiv, .szivacsDiv, .KonyharuhaDiv{
     width: 45%;
-    height: 40%;
+    height: 55%;
     background-color: bisque;
     margin: 30px;
     padding: 20px;
@@ -510,19 +512,28 @@ aside > img:active{
     }
 
     section > img{
-        display: block;
-        margin: auto;
         width: 30%;
+    }
+
+    #tippektrukkok{
+        width: 75%;
+        height: 60%;
+        left: 13%;
+    }
+
+    #tippektrukkok > img{
+        width: 25%;
+        left: 68%;
+    }
+
+    #tippektrukkok > img:active{
+        width: 35%;
+        left: 60%;
     }
 
     section:last-child{
         height: 20%;
         bottom: 0%;
-    }
-
-    aside > img{
-        display: flex;
-        flex-direction: row;
     }
 
     #video{
@@ -601,6 +612,7 @@ aside > img:active{
         margin: 10px;
         border-radius: 30px;
         flex-direction: column;
+        transition: 0.5s;
     }
 
     .navigation-avb{
@@ -618,8 +630,24 @@ aside > img:active{
         height: fit-content;
         width: fit-content;
         text-indent: 20px;
+        transition: 0.5s;
     }
 
+    #tippektrukkok{
+        height: 70%;
+        width: 80%;
+        left: 10%;
+    }
+
+    #tippektrukkok > img{
+        width: 40%;
+        left: 50%;
+    }
+
+    #tippektrukkok > img:active{
+        width: 45%;
+        left: 45%;
+    }
 
     #video video{
         width: 99%;
@@ -660,6 +688,12 @@ aside > img:active{
         bottom: 0%;
     }
 
+    #tippektrukkok{
+        width: 90%;
+        left: 5%;
+        height: 70%;
+    }
+
     .MIA-KRUMPLIK{
         height: 90%;
         width: 90%;
@@ -693,6 +727,10 @@ aside > img:active{
     .MIA-KRUMPLIK > img:active{
         height: 17%;
         left: 15%;
+    }
+
+    #tippektrukkok{
+        height: 80%;
     }
     
 }
@@ -749,3 +787,14 @@ aside > img:active{
 
 }
 
+@media screen and (max-height: 1280px) {
+    
+    section{
+        height: fit-content;
+    }
+
+    section:last-child{
+        height: fit-content;
+    }
+
+}
