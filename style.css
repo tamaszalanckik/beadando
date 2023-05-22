@@ -425,15 +425,25 @@ aside > img:active{
 
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1921px) {
     
     section{
         width: 50%;
     }
 
+    .MIA-KRUMPLIK > img{
+        height: 30%;
+        bottom: -10%;
+    }
+
+    .MIA-KRUMPLIK > img:active{
+        height: 40%;
+    }
+
     section:last-child{
         left: 50%;
         bottom: 0%;
+        height: 25%;
     }
 
     aside > img{
@@ -445,11 +455,17 @@ aside > img:active{
     }
 
     #tippektrukkok{
-        height: 70%;
+        height: 55%;
+    }
+
+    #tippektrukkok > img:active{
+        width: 50%;
+        bottom: 40%;
+        left: 45%;
     }
 
     .MIA-KRUMPLIK{
-        height: 80%;
+        height: 70%;
     }
 
     #kozepcim{
@@ -473,6 +489,7 @@ aside > img:active{
         left: 40%;
         height: 20%;
         bottom: 0%;
+        height: 27%;
     }
 
     aside > img{
@@ -494,15 +511,13 @@ aside > img:active{
     }
 
     .MIA-KRUMPLIK > img{
-        left: 18%;
-        height: 30%;
-    }
-
-    
+        height: 26%;
+        left: 27%;
+    }  
 
     .MIA-KRUMPLIK > img:active{
-        left: 15%;
-        height: 40%;
+        left: 20%;
+        height: 35%;
     }
     
     #kozepcim{
@@ -538,12 +553,12 @@ aside > img:active{
     }
 
     #tippektrukkok > img:active{
-        width: 35%;
-        left: 60%;
+        width: 50%;
+        left: 40%;
     }
 
     section:last-child{
-        height: 20%;
+        height: 30%;
         bottom: 0%;
     }
 
@@ -559,13 +574,12 @@ aside > img:active{
     }
 
     .MIA-KRUMPLIK > img{
-        margin-top: 90px;
-        height: 25%;
+        height: 23%;
     }
 
     .MIA-KRUMPLIK > img:active{
-        left: 10%;
-        height: 30%;
+        left: 20%;
+        height: 28%;
     }
 
     .MIA-KRUMPLIK{
@@ -614,6 +628,10 @@ aside > img:active{
     section{
         height: 30%;
         line-height: 24px;
+    }
+
+    section:last-child{
+        height: 20%;
     }
 
     .nav-right{
@@ -671,18 +689,19 @@ aside > img:active{
     }
 
     .MIA-KRUMPLIK{
-        height: 90%;
-        width: 70%;
+        left: 10%;
+        height: 80%;
+        width: 80%;
     }
 
     .MIA-KRUMPLIK > img{
-        height: 16%;
-        left: 16%;
+        height: 18%;
+        left: 30%;
     }
 
     .MIA-KRUMPLIK > img:active{
-        height: 20%;
-        left: 8%;
+        height: 22%;
+        left: 25%;
     }
 
 }
@@ -703,12 +722,18 @@ aside > img:active{
     #tippektrukkok{
         width: 90%;
         left: 5%;
-        height: 70%;
+        height: 75%;
+    }
+
+    #tippektrukkok > img:active{
+        width: 70%;
+        left: 20%;
     }
 
     .MIA-KRUMPLIK{
         height: 90%;
         width: 90%;
+        left: 5%;
     }
 
     .MIA-KRUMPLIK > img{
@@ -734,6 +759,7 @@ aside > img:active{
     .MIA-KRUMPLIK > img{
         height: 14%;
         left: 22%;
+        bottom: 0%;
     }
 
     .MIA-KRUMPLIK > img:active{
@@ -754,50 +780,64 @@ aside > img:active{
         bottom: 0%;
     }
 
-    section > img{
-        display: none;    
-    }
-
     section{
         width: 80%;
         left: 10%;
         bottom: 0%;
-        height: 50%;
+        height: 30%;
     }
 
     section:last-child{
-        height: 40%;
+        height: 30%;
         bottom: 0%;
         width: 80%;
         left: 10%;
     }
 
-    .MIA-KRUMPLIK{
+    #tippektrukkok{
         height: fit-content;
     }
 
+    .MIA-KRUMPLIK{
+        height: fit-content;
+        width: 90%;
+        left: 3%;
+    }  
+
     .MIA-KRUMPLIK > img{
-        display: none;
+        left: 0%;
     }
+
+    .MIA-KRUMPLIK > img:active{
+        left: 0%;
+        height: 15%;
+    }
+
+     .MIA-KRUMPLIK > img{
+        display: none;
+    } 
 
     .krumplipucoloDiv, .kesDiv, .pucoloGepDiv, .szivacsDiv, .KonyharuhaDiv{
         height: fit-content;
     }   
 
-    .krumplipucoloDiv > img{
+     .krumplipucoloDiv > img{
         display: none;
     }
 
     .pucoloGepDiv > img{
         display: none;
-    }
+    } 
 
     #kozepcim{
         width: fit-content;
         margin: 10px;
     }
+    
 
 }
+
+
 
 @media screen and (max-height: 1280px) {
     
