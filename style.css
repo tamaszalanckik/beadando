@@ -11,7 +11,6 @@ body, html{
     background-position: center;
     background-repeat: repeat-y;
     height: 100%;
-    z-index: 1;
 }
 
 .navigation{
@@ -65,6 +64,7 @@ section{
     height: 26%;
     line-height: 40px;
     margin-bottom: 20px;
+    z-index: 6;
 }
 
 
@@ -159,9 +159,9 @@ aside > img:active{
 }
 
 #tippektrukkok img{
-    position: absolute;
+    position: relative;
     left: 75%;
-    bottom: 5%;
+    bottom: 0%;
     transition: 0.5s;
 }
 
@@ -221,7 +221,6 @@ aside > img:active{
 .pucoloGepDiv > img{
     height: 40%;
     position: relative;
-    left: 35%;
     bottom: -40%;
 }
 
@@ -236,12 +235,14 @@ aside > img:active{
 }
 
 .MIA-KRUMPLIK{
-    width: 60%;
-    height: 55%;
+    width: 70%;
+    height: 60%;
     margin: 10px;
     padding: 20px;
     background-color: bisque;
-    margin: auto;
+    position: relative;
+    left: 15%;
+    bottom: 0;
     margin-bottom: 10px;
     border-radius: 30px;
 }
@@ -253,16 +254,16 @@ aside > img:active{
 }
 
 .MIA-KRUMPLIK > img{
-    margin-top: 50px;
+    margin: 0;
     height: 40%;
     position: relative;
-    left: 35%;
-    bottom: 0%;
+    left: 30%;
+    bottom: -5%;
 }
 
 .MIA-KRUMPLIK > img:active{
     height: 50%;
-    left: 30%;
+    left: 50%;
 }
 
 .hover-effect:hover{
@@ -414,11 +415,11 @@ aside > img:active{
     }
 
     .MIA-KRUMPLIK > img{
-        left: 20%;
+        left: 30%;
     }
 
     .MIA-KRUMPLIK > img:active{
-        left: 18%;
+        left: 27%;
         height: 45%;
     }
 
@@ -439,8 +440,16 @@ aside > img:active{
         width: 15%;
     }
 
+    #video{
+        height: 70%;
+    }
+
+    #tippektrukkok{
+        height: 70%;
+    }
+
     .MIA-KRUMPLIK{
-        height: 68%;
+        height: 80%;
     }
 
     #kozepcim{
@@ -488,6 +497,8 @@ aside > img:active{
         left: 18%;
         height: 30%;
     }
+
+    
 
     .MIA-KRUMPLIK > img:active{
         left: 15%;
@@ -544,6 +555,7 @@ aside > img:active{
     #video video{
         width: 90%;
         left: 5%;
+        bottom: 2%;
     }
 
     .MIA-KRUMPLIK > img{
