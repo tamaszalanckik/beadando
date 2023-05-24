@@ -123,10 +123,6 @@ aside > img:active{
     position: absolute;
 }
 
-#video video:hover{
-    cursor: none;
-}
-
 .dropdown ul{
     background-color: #FFFDD0;
     border-radius: 20px;
@@ -209,7 +205,7 @@ aside > img:active{
     height: 40%;
     position: relative;
     left: 40%;
-    bottom: -40%;
+    bottom: -30%;
 }
 
 .krumplipucoloDiv > img:active{
@@ -218,16 +214,56 @@ aside > img:active{
     bottom: -30%;
 }
 
+.kesDiv > img{
+    height: 40%;
+    position: relative;
+    left: 40%;
+    bottom: -30%;
+}
+
+.kesDiv > img:active{
+    height: 60%;
+    left: 35%;
+    bottom: -30%;
+}
+
 .pucoloGepDiv > img{
     height: 40%;
     position: relative;
-    bottom: -40%;
+    bottom: -30%;
+    left: 40%;
 }
 
 .pucoloGepDiv > img:active{
     height: 55%;
     left: 30%;
-    bottom: -35%;
+    bottom: -30%;
+}
+
+.szivacsDiv > img{
+    height: 40%;
+    position: relative;
+    bottom: -30%;
+    left: 40%;
+}
+
+.szivacsDiv > img:active{
+    height: 55%;
+    left: 30%;
+    bottom: -30%;
+}
+
+.KonyharuhaDiv > img{
+    height: 40%;
+    position: relative;
+    bottom: -30%;
+    left: 40%;
+}
+
+.KonyharuhaDiv > img:active{
+    height: 55%;
+    left: 30%;
+    bottom: -30%;
 }
 
 .kesDiv, .szivacsDiv{
@@ -476,6 +512,48 @@ aside > img:active{
         width: 60%;
     }
 
+    .krumplipucoloDiv > img:active{
+        height: 50%;
+        left: 36%;
+    }
+
+    .kesDiv > img{
+        left: 35%;
+    }
+
+    .kesDiv > img:active{
+        left: 30%;
+        height: 50%;
+    }
+
+    .pucoloGepDiv > img{
+        left: 35%;
+    }
+
+    .pucoloGepDiv >img:active{
+        height: 50%;
+    }
+
+    .szivacsDiv > img{
+        left: 30%;
+        bottom: -30%;
+    }
+
+    .szivacsDiv > img:active{
+        height: 45%;
+        left: 27%;
+    }
+
+    .KonyharuhaDiv > img{
+        left: 34%;
+    }
+
+    .KonyharuhaDiv > img:active{
+        left: 30%;
+        height: 50%;
+        bottom: -25%;
+    }
+
 }
 
 @media screen and (max-width: 1520px) {
@@ -588,22 +666,56 @@ aside > img:active{
 
     .krumplipucoloDiv > img{
         left: 30%;
+        height: 40%;
     }
 
-    .krumplipucoloDiv > img:active{
+    .krumplipucoloDiv >img:active{
+        left: 28%;
+        height: 45%;
+    }
+
+    .kesDiv > img{
+        left: 30%;
+        height: 35%;
+    }
+    
+    .kesDiv > img:active{
+        height: 44%;
         left: 25%;
-        height: 50%;
-        bottom: -35%;
     }
 
     .pucoloGepDiv > img{
-        left: 28%;
+        left: 30%;
+        height: 40%;
     }
 
     .pucoloGepDiv > img:active{
-        height: 50%;
-        left: 24%;
-        bottom: -35%;
+        left: 27%;
+        height: 45%;
+    }
+
+    .szivacsDiv > img{
+        bottom: -15%;
+        left: 20%;
+        height: 40%;
+    }
+
+    .szivacsDiv >img:active{
+        height: 45%;
+        bottom: -10%;
+        left: 15%;
+    }
+
+    .KonyharuhaDiv > img{
+        height: 40%;
+        left: 25%;
+        bottom: -20%;
+    }
+
+    .KonyharuhaDiv > img:active{
+        height: 45%;
+        bottom: -20%;
+        left: 23%;
     }
 
 }
@@ -619,6 +731,41 @@ aside > img:active{
     .MIA-KRUMPLIK > img:active{
         height: 24%;
         left: 16%;
+    }
+
+    .kesDiv > img{
+        left: 25%;
+    }
+
+    .kesDiv > img:active{
+        left: 22%;
+        height: 40%;
+    }
+
+    .pucoloGepDiv > img{
+        left: 22%;
+    }
+
+    .pucoloGepDiv > img:active{
+        left: 18%;
+        height: 45%;
+    }
+
+    .szivacsDiv > img{
+        left: 22%;
+        height: 30%;
+    }
+
+    .szivacsDiv > img:active{
+        height: 40%;
+    }
+
+    .KonyharuhaDiv > img{
+        left: 20%;
+    }
+
+    .KonyharuhaDiv > img:active{
+        left: 17%;
     }
 
 }
@@ -675,8 +822,8 @@ aside > img:active{
     }
 
     #tippektrukkok > img:active{
-        width: 45%;
-        left: 45%;
+        width: 60%;
+        left: 30%;
     }
 
     #video video{
@@ -690,7 +837,7 @@ aside > img:active{
 
     .MIA-KRUMPLIK{
         left: 10%;
-        height: 80%;
+        height: 85%;
         width: 80%;
     }
 
@@ -702,6 +849,54 @@ aside > img:active{
     .MIA-KRUMPLIK > img:active{
         height: 22%;
         left: 25%;
+    }
+
+    .krumplipucoloDiv > img{
+        left: 23%;
+    }
+
+    .krumplipucoloDiv > img:active{
+        left: 20%;
+    }
+
+    .kesDiv > img{
+        left: 18%;
+    }
+
+    .kesDiv > img:active{
+        left: 15%;
+        height: 37%;
+    }
+
+    .pucoloGepDiv > img{
+        left: 18%;
+        height: 35%;
+    }
+
+    .pucoloGepDiv > img:active{
+        left: 15%;
+        height: 40%;
+        bottom: -30%;
+    }
+
+    .szivacsDiv > img{
+        left: 18%;
+    }
+
+    .szivacsDiv > img:active{
+        left: 13%;
+        height: 33%;
+    }
+
+    .KonyharuhaDiv > img{
+        left: 15%;
+        height: 35%;
+    }
+
+    .KonyharuhaDiv > img:active{
+        left: 10%;
+        bottom: -15%;
+        height: 40%;
     }
 
 }
@@ -770,7 +965,77 @@ aside > img:active{
     #tippektrukkok{
         height: 80%;
     }
+
+    .kesDiv > img{
+        left: 10%;
+    }
+
+    .kesDiv > img:active{
+        left: 5%;
+    }
+
+    .pucoloGepDiv > img:active{
+        left: 10%;
+    }
+
+    .szivacsDiv > img{
+        left: 10%;
+    }
+
+    .szivacsDiv > img:active{
+        left: 4%;
+    }
     
+}
+
+@media screen and (max-width: 550px) {
+
+    .krumplipucoloDiv > img{
+        left: 12%;
+    }
+
+    .krumplipucoloDiv > img:active{
+        left: 10%;
+    }
+    
+    .kesDiv > img{
+        left: 5%;
+    }
+
+    .kesDiv > img:active{
+        left: 5%;
+        height: 35%;
+    }
+
+    .pucoloGepDiv > img{
+        left: 7%;
+    }
+
+    .pucoloGepDiv > img:active{
+        left: 7%;
+        height: 35%;
+    }
+
+    .szivacsDiv > img{
+        left: 5%;
+    }
+
+    .szivacsDiv > img:active{
+        left: 5%;
+        height: 30%;
+        bottom: -15%;
+    }
+
+    .KonyharuhaDiv > img{
+        left: 5%;
+    }
+
+    .KonyharuhaDiv > img:active{
+        left: 5%;
+        height: 35%;
+        bottom: -20%;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -813,7 +1078,7 @@ aside > img:active{
         height: 15%;
     }
 
-     .MIA-KRUMPLIK > img{
+    .MIA-KRUMPLIK > img{
         display: none;
     } 
 
@@ -821,23 +1086,45 @@ aside > img:active{
         height: fit-content;
     }   
 
-     .krumplipucoloDiv > img{
+    .krumplipucoloDiv > img{
+        display: none;
+    }
+
+    .kesDiv > img{
         display: none;
     }
 
     .pucoloGepDiv > img{
         display: none;
-    } 
+    }
+
+    .szivacsDiv > img{
+        display: none;
+    }
+
+    .KonyharuhaDiv > img{
+        display: none;
+    }
 
     #kozepcim{
         width: fit-content;
         margin: 10px;
     }
     
-
 }
 
+@media screen and (max-height: 1014px) {
 
+    .MIA-KRUMPLIK > img{
+        display: none;
+    }
+
+    .MIA-KRUMPLIK{
+        height: fit-content;
+        margin-bottom: 20px;
+    }
+
+}
 
 @media screen and (max-height: 1280px) {
     
@@ -846,6 +1133,153 @@ aside > img:active{
     }
 
     section:last-child{
+        height: fit-content;
+    }
+
+}
+
+@media screen and (max-height: 1170px) {
+
+    #tippektrukkok{
+        height: 70%;
+    }
+    
+    #tippektrukkok > img{
+        bottom: -10%;
+    }
+
+    #tippektrukkok > img:active{
+        bottom: 25%;
+    }
+    
+}
+
+@media screen and (max-height: 1014px) {
+    
+    #tippektrukkok{      
+        height: 80%;
+    }
+
+    #tippektrukkok > img{
+        bottom: -20%;
+    }
+
+}
+
+@media screen and (max-height: 950px) {
+    
+    #tippektrukkok > img{
+        bottom: -15%;
+    }
+}
+
+@media screen and (max-height: 896px) {
+
+    #tippektrukkok > img{
+        bottom: -10%;
+    }
+
+    #tippektrukkok > img:active{
+        bottom: 40%;
+    }
+
+}
+
+@media screen and (max-height: 860px) {
+
+    #tippektrukkok > img{
+        bottom: -5%;
+    }
+
+}
+
+@media screen and (max-height: 818px) {
+
+    #tippektrukkok > img{
+        bottom: 0%;
+    }
+
+    #tippektrukkok > img:active{
+        bottom: 45%;
+    }
+
+}
+
+@media screen and (max-height: 772px) {
+
+    #tippektrukkok{
+        height: 90%;
+    }
+
+    #tippektrukkok > img{
+        bottom: -10%;
+    }
+
+    #tippektrukkok > img:active{
+        bottom: 40%;
+    }
+
+}
+
+@media screen and (max-height: 754px) {
+    
+    #tippektrukkok > img{
+        bottom: -5%;
+    }
+
+}
+
+@media screen and (max-height: 720px) {
+
+    #tippektrukkok > img{
+        bottom: 0%;
+    }
+
+    #tippektrukkok > img:active{
+        bottom: 45%;
+    }
+
+}
+
+@media screen and (max-height: 690px) {
+
+    #tippektrukkok{
+        height: 100%;
+    }
+
+    #tippektrukkok > img{
+        bottom: -5%;
+    }
+
+}
+
+@media screen and (max-height: 660px) {
+
+    #tippektrukkok > img{
+        bottom: 0%;
+    }
+
+}
+
+@media screen and (max-height: 620px) {
+
+    #tippektrukkok{
+        height: 110%;
+    }
+
+    #tippektrukkok > img{
+        bottom: -5%;
+    }
+
+}
+
+@media screen and (max-height: 600px) {
+    
+    #tippektrukkok > img{
+        display: none;
+    }
+
+    #tippektrukkok{
         height: fit-content;
     }
 
