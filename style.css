@@ -3,6 +3,7 @@ body, html{
     margin: 0;
     background-color: rgb(145, 115, 79);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .background{
@@ -1124,6 +1125,15 @@ aside > img:active{
         margin-bottom: 20px;
     }
 
+    #tippektrukkok{      
+        height: 80%;
+    }
+
+    #tippektrukkok > img{
+        bottom: -20%;
+    }
+
+
 }
 
 @media screen and (max-height: 1280px) {
@@ -1154,18 +1164,6 @@ aside > img:active{
     
 }
 
-@media screen and (max-height: 1014px) {
-    
-    #tippektrukkok{      
-        height: 80%;
-    }
-
-    #tippektrukkok > img{
-        bottom: -20%;
-    }
-
-}
-
 @media screen and (max-height: 950px) {
     
     #tippektrukkok > img{
@@ -1181,6 +1179,10 @@ aside > img:active{
 
     #tippektrukkok > img:active{
         bottom: 40%;
+    }
+
+    #video{
+        height: 80%;
     }
 
 }
@@ -1201,6 +1203,10 @@ aside > img:active{
 
     #tippektrukkok > img:active{
         bottom: 45%;
+    }
+
+    #video{
+        height: 85%;
     }
 
 }
@@ -1227,6 +1233,10 @@ aside > img:active{
         bottom: -5%;
     }
 
+    #video{
+        height: 90%;
+    }
+
 }
 
 @media screen and (max-height: 720px) {
@@ -1237,6 +1247,10 @@ aside > img:active{
 
     #tippektrukkok > img:active{
         bottom: 45%;
+    }
+
+    #video{
+        height: 95%;
     }
 
 }
@@ -1251,12 +1265,24 @@ aside > img:active{
         bottom: -5%;
     }
 
+    #tippektrukkok > img{
+        display: none;
+    }
+
+    #tippektrukkok{
+        height: fit-content;
+    }
+
 }
 
 @media screen and (max-height: 660px) {
 
     #tippektrukkok > img{
         bottom: 0%;
+    }
+
+    #video{
+        height: 100%;
     }
 
 }
@@ -1271,16 +1297,48 @@ aside > img:active{
         bottom: -5%;
     }
 
+    #video{
+        height: 105%;
+    }
+
 }
 
 @media screen and (max-height: 600px) {
-    
-    #tippektrukkok > img{
-        display: none;
+
+    #video{
+        height: 110%;
     }
 
-    #tippektrukkok{
-        height: fit-content;
+}
+
+@media screen and (max-height: 576px) {
+
+    #video{
+        height: 115%;
+    }
+
+}
+
+@media screen and (max-height: 550px) {
+
+    #video{
+        height: 120%;
+    }
+
+}
+
+@media screen and (max-height: 528px) {
+
+    #video{
+        height: 125%;
+    }
+
+}
+
+@media screen and (max-height: 506px) {
+
+    #video{
+        height: 130%;
     }
 
 }
