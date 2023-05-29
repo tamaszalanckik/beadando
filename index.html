@@ -70,8 +70,21 @@
                 <li>Tájnyelvi nevei: krumpedli, krumpi, kolompér, kompér, kolompír, korompér, krompér, gruja, földialma, svábtök, földitök vagy pityóka</li> 
             </ul>
         </section>
-    </div>
 
+    </div>
+    
+    <footer>
+        <button id="krumpliButton" onclick="tobbKrumpli();" style="border: none; background-color: transparent; color: white;">Kattints ide</button>
+    </footer>
+    
     <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let Krumpli = 0;
+
+        function tobbKrumpli() {
+            Krumpli = Krumpli + 1;
+            document.querySelector("#krumpliButton").innerHTML = `Összes krumpli: ${Krumpli}`
+        }
+    </script>
 </body>
 </html>

@@ -439,10 +439,6 @@ table tr th, td{
         height: 25%;
     }
 
-    aside > img{
-        width: 15%;
-    }
-
     #video{
         height: 70%;
     }
@@ -469,11 +465,6 @@ table tr th, td{
         height: 20%;
         bottom: 0%;
         height: 27%;
-    }
-
-    aside > img{
-        width: 20%;
-        left: 70%;
     }
 
     #video{
