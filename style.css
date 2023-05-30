@@ -27,6 +27,16 @@ body, html{
     width: fit-content;
 }
 
+footer > button{
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
 .nav-left{
     justify-content: flex-start;
 }
@@ -739,6 +749,14 @@ table tr th, td{
         width: fit-content;
     }
     
+}
+
+@media screen and (max-width: 400px) {
+
+    footer{
+        display: none;
+    }
+
 }
 
 @media screen and (max-height: 1014px) {
